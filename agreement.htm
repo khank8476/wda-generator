@@ -1,3 +1,20 @@
+<style>
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *::after,
+    *::before {
+        box-sizing: inherit;
+    }
+
+    body {
+        margin: 1rem auto;
+        padding: 0 1rem;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+</style>
 <output id="agreement_data">
     <script>
         const agreement_data = document.getElementById('agreement_data');
@@ -5,6 +22,8 @@
         var effective_date = effective_date.toLocaleDateString("en-gb");
 
         agreement_data.innerHTML = `
+        <html>
+        <body>
         <h1>WEBSITE DEVELOPMENT AGREEMENT</h1>
         <p>This Web Development Agreement (the "Agreement") is made on this ${effective_date} ("Effective Date") 
         BY AND BETWEEN
@@ -53,41 +72,31 @@
         referred to as "Party" and collectively as "Parties")
         _
         WHEREAS
-        <p><li>A. The Service Provider is in the business of providing the Website
+        <p>
+            A. The Service Provider is in the business of providing the Website
             Development Services ("SERVICES") (_as defined hereunder) _and has the
             skills, qualifications and expertise required to perform the
-            Services.</li></p>
-        <p>B. The Client desires to engage the Service Provider to provide the
+            Services.
+        </p>
+        <p>
+            B. The Client desires to engage the Service Provider to provide the
             Website Development Services and the Service Provider has agreed to do
-            the same.</p>
-        <p>C. Pursuant to the above, the Parties seek to enter into this
+            the same.
+        </p>
+        <p>
+            C. Pursuant to the above, the Parties seek to enter into this
             Agreement to confirm and record the terms and conditions on which the
             Service Provider shall provide the Services to the Client and other
-            agreements in connection therewith.</p>
-        <p>1. DEFINITIONS
-            (a) "Applicable Law" shall include all applicable (i) statutes,
-            enactments, acts of legislature or parliament, laws, ordinances,
-            rules, bye-laws, regulations, listing agreements, notifications,
-            guidelines or policies of any jurisdiction; and (ii) judicial
-            quasi-judicial and/or administrative decisions, interpretations,
-            directions, directives, licenses, permits, judgments, writs,
-            injunctions, arbitral awards, decrees, orders, terms and conditions of
-            governmental or regulatory approvals or agreements with any
-            governmental or regulatory authority;
-            (b) "Government Body" means any government authority, statutory
-            authority, government department, agency, commission, board, tribunal
-            or court or other law, rule or regulation-making entity having or
-            purporting to have jurisdiction on behalf of India or any state or
-            other subdivision thereof or any municipality, district, or other
-            subdivision thereof;
-            (c) "GST" means Goods and services tax under the Goods and Services
-            Tax Act, 2017;
-            (d) "Services" means the Website and App Development Services. Remove the sentence ahead if service details are not attached (The
-            service details will be attached along as Annexure-A;)
-            (e) "Term" means the period during which the Service Provider has
-            provided/shall provide Services in terms of this Agreement which shall
-            be the period as specified in Clause on (Term and Termination) of this
-            Agreement.</p>
+            agreements in connection therewith.
+        </p>
+        <p>
+            <b>1. DEFINITIONS</b>
+            (a) "Applicable Law" shall include all applicable 
+                (i) statutes, enactments, acts of legislature or parliament, laws, ordinances, rules, bye-laws, regulations, listing agreements, notifications, guidelines or policies of any jurisdiction; and (ii) judicial quasi-judicial and/or administrative decisions, interpretations, directions, directives, licenses, permits, judgments, writs, injunctions, arbitral awards, decrees, orders, terms and conditions of governmental or regulatory approvals or agreements with any governmental or regulatory authority;
+            (b) "Government Body" means any government authority, statutory authority, government department, agency, commission, board, tribunalor court or other law, rule or regulation-making entity having orpurporting to have jurisdiction on behalf of India or any state orother subdivision thereof or any municipality, district, or othersubdivision thereof;
+            (c) "GST" means Goods and services tax under the Goods and Services Tax Act, 2017;
+            (d) "Services" means the Website and App Development Services. Remove the sentence ahead if service details are not attached (The service details will be attached along as Annexure-A;)
+            (e) "Term" means the period during which the Service Provider has provided/shall provide Services in terms of this Agreement which shall be the period as specified in Clause on (Term and Termination) of this Agreement.</p>
         (2). INTERPRETATION
         (a) The headings in this Agreement are inserted for convenience only
         and shall be ignored in construing this Agreement.
@@ -1263,5 +1272,7 @@
             ANNEXURE-A
             STATEMENT OF WORK
             (Please add the detailed statement of work here)
+            </body>
+            </html>
             `;
     </script>
