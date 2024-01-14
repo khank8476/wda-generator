@@ -1,9 +1,9 @@
-#Web development agreement generator
+# Web development agreement generator
 
-##Use it online
-➡ Open this online[https://khank8476.github.io/wda-generator]
+## Use it online
+➡ [Open this online](https://khank8476.github.io/wda-generator)
 
-##Contributing
+## Contributing
 Pull requests are welcome.
 
-Inspired from ooo[https://github.com/verlok/ooo]
+**Inspired from [ooo](https://github.com/verlok/ooo)**
